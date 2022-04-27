@@ -34,11 +34,3 @@ func leave():
 func throw(power):
 	leave()
 	apply_impulse(Vector3(), holder.look_vector * Vector3(power, power, power))
-
-
-func _on_Pickup_test_body_entered(body):
-	if abs(self.linear_velocity.x) > interact_factor or abs(self.linear_velocity.y) > interact_factor or abs(self.linear_velocity.z) > interact_factor:
-		if $"MeshInstance".get_surface_material(0).albedo_color == Color(1.0, 1.0, 0.0):
-			$"MeshInstance".get_surface_material(0).albedo_color = Color(0.0, 0.0, 0.0)
-		else:
-			$"MeshInstance".get_surface_material(0).albedo_color = Color(1.0, 1.0, 0.0)

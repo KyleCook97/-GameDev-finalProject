@@ -153,7 +153,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.584962, -0.714723, -1.12066 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.3193 )
 
 [node name="pickup_pos" type="Position3D" parent="Yaw/Camera"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.10606 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.93922, -0.394491, -2.10606 )
 
 [node name="InteractionRay" type="RayCast" parent="Yaw/Camera"]
 enabled = true
